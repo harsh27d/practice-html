@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Fact Generator</title>
+</head>
+<body>
+
+    <h1>Did You Know? 🤔</h1>
+
+    <p id="fact">Click the button to discover a fact!</p>
+
+    <button onclick="showFact()">Show Random Fact</button>
+
+    <script>
+        let facts = [
+            "Octopuses have three hearts.",
+            "Honey never spoils.",
+            "A day on Venus is longer than its year.",
+            "Bananas are technically berries.",
+            "Sharks existed before trees."
+        ];
+
+        function showFact() {
+            let random = Math.floor(Math.random() * facts.length);
+
+            document.getElementById("fact").innerText = facts[random];
+        }
+    </script>
+
+</body>
+</html>
