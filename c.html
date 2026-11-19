@@ -1,0 +1,14 @@
+<html>
+<body>
+<h2>Do you like this?</h2>
+<button onclick="like()">Like</button>
+<p id="result">0 Likes</p>
+<script>
+let count = 0;
+function like() {
+    count++;
+    document.getElementById("result").innerText = count + " Likes";
+}
+</script>
+</body>
+</html>
